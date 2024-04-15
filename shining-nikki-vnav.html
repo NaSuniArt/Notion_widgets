@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Advent Pro', sans-serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #ffffff;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #696c71;
+		}
+
+		.border {
+			border: 1px solid #cccccc;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #edc7d8;
+		}
+		
+
+}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border background">
+		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> </a>
+		<a id="tags" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-tags"></i></a>
+		<a id="Federal" onclick="navigate(this.id)" href="#"> <img src="https://asukii314.github.io/sn-suit-reference/nation/apple.png" alt="Federal"
+		width="25" height="25" ></i></a>
+		<a id="Pigeon" onclick="navigate(this.id)" href="#"> <img src="https://asukii314.github.io/sn-suit-reference/nation/pigeon.png" alt="Pigeon"
+		width="25" height="25" ></i></a>
+		<a id="Cloud" onclick="navigate(this.id)" href="#"> <img src="https://asukii314.github.io/sn-suit-reference/nation/cloud.png" alt="Cloud"
+		width="25" height="25" ></i></a>
+		<a id="Ninir" onclick="navigate(this.id)" href="#"> <img src="https://asukii314.github.io/sn-suit-reference/nation/ninir.png" alt="Ninir"
+		width="25" height="25" ></i></a>
+		<a id="Wasteland" onclick="navigate(this.id)" href="#"> <img src="https://asukii314.github.io/sn-suit-reference/nation/wasteland.png" alt="Wasteland"
+		width="25" height="25" ></i></a>
+		<a id="Ruins" onclick="navigate(this.id)" href="#"> <img src="https://asukii314.github.io/sn-suit-reference/nation/ruin.png" alt="Ruins"
+		width="25" height="25" ></i></a>
+		<a id="North" onclick="navigate(this.id)" href="#"> <img src="https://asukii314.github.io/sn-suit-reference/nation/north.png" alt="North"
+		width="25" height="25" ></i></a>
+		<a id="Special" onclick="navigate(this.id)" href="#"> <img src="https://asukii314.github.io/sn-suit-reference/nation/special.png" alt="Special"
+		width="25" height="25" ></i></a>
+
+	</nav>
+
+
+	<script>
+
+		let direction = "vertical";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'home')
+				window.open("https://www.notion.so/Shinning-Nikki-09e17e3ef65b4edcb3cd605fa1781a69?pvs=4", '_blank').focus();
+				
+				else if (id == 'tags')
+				window.open("https://www.notion.so/TAGS-311b6a8f8ae440638abab1d7b9bf5b31?pvs=4", '_blank').focus();
+				
+				else if (id == 'Federal')
+				window.open("https://www.notion.so/Pigeon-s-Glory-6af83aba3eab4942bf7d3a51ffd93726?pvs=4", '_blank').focus();
+				
+				else if (id == 'Pigeon')
+				window.open("https://www.notion.so/115bbacfcf654e4c8a55b4a30af8057c?v=45a466a91e7e4005ac2a349cd6b299e7&pvs=4", '_blank').focus();
+				
+				else if (id == 'Cloud')
+				window.open("https://www.notion.so/Feast-in-Cloud-df9a3318bffd43cf870f44006c73a502?pvs=4", '_blank').focus();
+				
+				else if (id == 'Ninir')
+				window.open("https://www.notion.so/Ninir-Adventures-68d284884abf440ba13c78aa5f00835f?pvs=4", '_blank').focus();
+				
+				else if (id == 'Wasteland')
+				window.open("https://www.notion.so/View-of-Wasteland-a9faf5df4af444669b68fd21fb43faff?pvs=4", '_blank').focus();
+				
+				else if (id == 'Ruins')
+				window.open("https://www.notion.so/Ruins-of-Galaxy-82e85b28e1564c16a08ad9249bd706f7?pvs=4", '_blank').focus();
+				
+				else if (id == 'North')
+				window.open("https://www.notion.so/Rift-of-North-d82705e60e7a4fa8968bece6919849eb?pvs=4", '_blank').focus();
+
+				else if (id == 'Special')
+				window.open("https://www.notion.so/Special-9b02b0c7b5c94211a81750d9b2b3f96a?pvs=4", '_blank').focus();
+
+		}
+	</script>
+
+
+</body>
+
+</html>
